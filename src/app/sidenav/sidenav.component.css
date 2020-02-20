@@ -1,0 +1,15 @@
+.wrap {
+    background-color: rgb(151, 145, 145);
+    border: 1px solid black;
+    border-radius: 3px;
+    max-width: 191px;
+}
+
+.wrap .content {
+    margin-left: 5px;
+}
+
+.wrap p {
+    font-weight: 600;
+    font-size: xx-large;
+}

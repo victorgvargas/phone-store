@@ -1,0 +1,25 @@
+<div class="wrap">
+    <div class="content">
+        <br>
+        <p>Search:</p>
+        <br>
+        <input type="text" placeholder="Search input" [(ngModel)]="cellphone" (keyup.enter)="onSearch()">
+        <br>
+        <br>
+        <button class="btn btn-primary" (click)="onSearch()">Search</button>
+        <br>
+        <br>
+        <p>Order by:</p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ activeText }}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" (click)="orderOptions(1)">{{ firstOptionText }}</a>
+              <a class="dropdown-item" (click)="orderOptions(2)">{{ secondOptionText }}</a>
+            </div>
+          </div>
+          <br>
+          <br>
+    </div>
+</div>

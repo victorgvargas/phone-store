@@ -1,0 +1,13 @@
+.card {
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.card .card-img-top{
+    max-height: 150px;
+}
+
+.card .card-body {
+    background-color: rgb(151, 145, 145);
+}

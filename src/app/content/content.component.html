@@ -1,0 +1,30 @@
+<div *ngIf="!isFiltered">
+    <div *ngFor="let phone of cellphones">
+        <div 
+            class="card" 
+            style="width: 18rem;"  
+        >
+            <img [src]="phone.imgPath" class="card-img-top" [alt]="phone.name">
+            <div class="card-body">
+                <h5 class="card-title">{{ phone.name }}</h5>
+                <p class="card-text">{{ phone.price }}</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="isFiltered">
+    <div *ngFor="let phone of filteredContent">
+        <div 
+            class="card" 
+            style="width: 18rem;"  
+        >
+            <img [src]="phone.imgPath" class="card-img-top" [alt]="phone.name">
+            <div class="card-body">
+                <h5 class="card-title">{{ phone.name }}</h5>
+                <p class="card-text">{{ phone.price }}</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
